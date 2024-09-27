@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">My Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">&#9776;</div> <!-- Hamburger for mobile -->
+  </nav>
+
+  <!-- Hero Section with Sliding Background -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span class="highlight">Avronil Madhu</span></h1>
+      <p>Frontend Development | Computer Networking</p><br><br>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>Mail id : <a href="avronilmadhu121@gmail.com">avronilmadhu121@gmail.com</a></p>
+      <p>Linkdin Profile : <a href="https://www.linkedin.com/in/avronil-madhu-b3a992242/">My_linkdin_Profile</a></p>
+      <p>Aspiring to be a part of a reputed organization, working in a responsible position and performing consistently to the best of my skills and abilities in order to learn and grow along with the organization.</p>
+    </div>
+    <div class="profile-photo">
+      <img src="https://media.licdn.com/dms/image/v2/D5635AQHHEXdflexouA/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1723874000032?e=1728061200&v=beta&t=2s5OIWaj1yZrr09h5lL-Qd2xRcNUJhsakytbKoczzS8" alt="Your Photo">
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">PL/SQL</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2> 
+    <div class="project-card">
+      <h3>Project 1 : <a href="https://avronil01.github.io/Quiz-Application/">Quiz Application</a></h3><br> 
+      <p>Creating a quiz application with HTML, CSS, and JavaScript involves structuring the user interface with HTML , styling the elements with CSS for a visually appealing layout , and using JavaScript to handle the quiz logic and questions , answers .</p>
+    </div>
+    <div class="project-card">
+      <h3>Project 2 : <a href="https://avronil01.github.io/To-Do-List/">To-Do-List</a></h3><br> 
+      <p>Create a minimalist To-Do List using HTML, CSS, and JavaScript. HTML provides the structure, CSS styles the appearance, and JavaScript handles dynamic functionality. Users can add tasks, mark them complete, and remove them. A clean interface ensures efficient task management for productivity .</p>
+    </div>
+    <div class="project-card">
+      <h3>Project 3 : <a href="https://avronil01.github.io/Simon-Game/">Simon-Game</a></h3><br> 
+      <p>Welcome to the Simon Game, a classic memory game where players must repeat a pattern of colors. This game is developed using HTML, CSS, JavaScript, and jQuery.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="submit-form.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

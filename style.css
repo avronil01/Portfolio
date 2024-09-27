@@ -1,0 +1,231 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1f2b;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 30px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #f1c40f;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Hero Section with Sliding Background Images */
+  .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slideBg 20s infinite;
+    z-index: -1;
+    filter: brightness(0.6); /* Darkens the background for better contrast */
+  }
+  
+  @keyframes slideBg {
+    0% { background-image: url('https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg'); }
+    33% { background-image: url('https://media.istockphoto.com/id/1420039900/photo/cyber-security-ransomware-email-phishing-encrypted-technology-digital-information-protected.jpg?s=612x612&w=0&k=20&c=8wFwFVMOpW9gF2GTOx0vagIKDaw3YNFnBVbYCmoTUSY='); }
+    66% { background-image: url('https://miro.medium.com/v2/resize:fit:1200/0*SqZQI6jVDP21ynJh.jpg'); }
+    100% { background-image: url('https://www.21kschool.com/bh/wp-content/uploads/sites/18/2023/07/Coding.png'); }
+  }
+  
+  .hero-content {
+    color: white;
+    z-index: 1;
+    animation: fadeIn 2s ease;
+  }
+  
+  .highlight {
+    color: #f1c40f;
+    font-weight: bold;
+  }
+  
+  .btn {
+    background-color: #f1c40f;
+    color: #1c1f2b;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #d4a309;
+    transform: translateY(-5px);
+  }
+  
+  /* About Section */
+  .about {
+    display: flex;
+    padding: 80px 50px;
+    background-color: #f7f7f7;
+  }
+  
+  .about-content {
+    flex: 1;
+    padding-right: 30px;
+    text-align: left;
+    color: #333;
+  }
+  
+  .profile-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-photo img {
+    border-radius: 50%;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Skills Section */
+  .skills {
+    background-color: #1c1f2b;
+    padding: 60px;
+    text-align: center;
+    color: white;
+  }
+  
+  .skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .skill-card {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 40px;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+    background-color: #2980b9;
+  }
+  
+  /* Projects Section */
+  .projects {
+    background-color: #f7f7f7;
+    padding: 60px;
+    text-align: center;
+  }
+  
+  .project-card {
+    background-color: #e74c3c;
+    color: white;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: #1c1f2b;
+    color: white;
+    padding: 60px;
+    text-align: center;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact input, .contact textarea {
+    margin: 15px;
+    padding: 15px;
+    width: 80%;
+    max-width: 500px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  .contact button {
+    padding: 15px 30px;
+    background-color: #f1c40f;
+    color: #1c1f2b;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact button:hover {
+    background-color: #d4a309;
+    transform: translateY(-5px);
+  }
+  
+  /* Keyframes for Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    
+  }  
